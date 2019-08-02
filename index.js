@@ -1,12 +1,12 @@
 const replaceFirst = (buffer, str, replacer) => {
   const charIndex = buffer.indexOf(str);
-  buffer.write(str, charIndex - 1, replacer);
+  buffer.write(replacer, charIndex);
   return buffer;
 };
 
 const replaceLast = (buffer, str, replacer) => {
   const charIndex = buffer.lastIndexOf(str);
-  buffer.write(str, charIndex - 1, replacer);
+  buffer.write(replacer, charIndex);
   return buffer;
 };
 
