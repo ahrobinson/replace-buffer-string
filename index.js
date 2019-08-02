@@ -12,8 +12,8 @@ const replaceLast = (buffer, str, replacer) => {
 
 const replaceAll = (buffer, str, replacer) => {
   for(let i = 0; i < buffer.length; i++) {
-    if(buffer[i] === str) {
-      buffer[i] = replacer;
+    if(buffer[i] === str.charCodeAt(0)) {
+      buffer[i] = replacer.charCodeAt(0);
     }
   }
   return buffer;
