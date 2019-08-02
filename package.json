@@ -1,5 +1,5 @@
 {
-  "name": "replace-buffer",
+  "name": "replace-buffer-string",
   "version": "1.0.0",
   "description": "replace string characters in buffer",
   "main": "index.js",
